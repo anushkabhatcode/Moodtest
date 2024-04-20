@@ -38,7 +38,7 @@ const Dashboard = () => {
         // Define your token
         const token = localStorage.getItem('token');
         
-        const response = await fetch('/stats', {
+        const response = await fetch('https://moodtest-4.onrender.com/stats', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
