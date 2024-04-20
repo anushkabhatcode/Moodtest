@@ -39,7 +39,7 @@ const Login = () => {
       if(validateInputs()){
 
         try{
-          const response = await fetch('/users/login', {
+          const response = await fetch('https://moodtest-4.onrender.com/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
