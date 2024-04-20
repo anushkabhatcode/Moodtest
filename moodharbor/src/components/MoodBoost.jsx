@@ -32,7 +32,7 @@ const MoodBoost = () => {
       const fetchCurrentMood = async () => {
         try {
           const token = localStorage.getItem('token');
-          const response = await fetch('http://localhost:4000/logmood/currentmood', {
+          const response = await fetch('/logmood/currentmood', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ const MoodBoost = () => {
       const fetchDesiredMood = async () => {
         try {
           const token = localStorage.getItem('token');
-          const response = await fetch('http://localhost:4000/logmood/desiredmood', {
+          const response = await fetch('/logmood/desiredmood', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ const MoodBoost = () => {
         const token = localStorage.getItem('token');
         
         // Make API call using fetch with authorization header
-        const response = await fetch('http://localhost:4000/recommend', {
+        const response = await fetch('/recommend', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -153,7 +153,7 @@ const MoodBoost = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:4000/save', {
+      const response = await fetch('/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -38,7 +38,7 @@ const Dashboard = () => {
         // Define your token
         const token = localStorage.getItem('token');
         
-        const response = await fetch('http://localhost:4000/stats', {
+        const response = await fetch('/stats', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
