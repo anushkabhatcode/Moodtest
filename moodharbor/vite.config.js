@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // Define your proxy rules here
       '/': {
-        target: 'https://moodtest-4.onrender.com/', // Specify the target host
+        target: 'https://moodtest-4.onrender.com', // Specify the target host
         changeOrigin: true
         
       },
